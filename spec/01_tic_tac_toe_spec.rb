@@ -76,8 +76,8 @@ describe './lib/tic_tac_toe.rb' do
     it 'allows "X" player in the bottom right and "O" in the top left ' do
       board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
       move(board, 0, 'X')
-      move(board, 8, 'X')
-      expect(board).to eq(['O', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X'])
+      move(board, 8, 'O')
+      expect(board).to eq(['X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'O'])
     end
   end
 
