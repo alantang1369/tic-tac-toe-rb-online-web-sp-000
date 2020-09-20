@@ -40,7 +40,10 @@ def play(board)
     turn(board)
     
   end 
-  won?(board)==true puts "Congratulations #{winner(board)}!" : "Cat's Game!"
+  if won?(board)
+    puts "Congratulations #{winner(board)}!" 
+    else puts "Cat's Game!"
+  end    
 end  
 
 def turn_count(board)
